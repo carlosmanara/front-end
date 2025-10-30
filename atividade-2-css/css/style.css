@@ -1,0 +1,540 @@
+/*  RESET E CONFIGURAÇÕES GLOBAIS  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*   HEADER E NAVEGAÇÃO   */
+
+.header {
+    background-color: #fcf95e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.container-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 200px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/*  BANNER    */
+
+.banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*   CONTAINERS E LAYOUTS  */
+
+.container {    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container-quem-somos,
+.container-projetos {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/*  CARTÕES    */
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    background-color: #f3f3ec;
+}
+
+/*  IMAGENS    */
+
+.foto {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.foto-maior {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+/*  TEXTOS E TÍTULOS   */
+
+.title {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 30px 0;
+    font-size: 22px;
+}
+
+.numbers {
+    color: #161616;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-size: 50px;
+}
+
+.texto-foto {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.text-center {
+    text-decoration: none;
+    text-align: center;
+    color: #333;
+    line-height: 1.5;
+}
+
+/*  FORMULÁRIOS   */
+
+.main-form {
+    padding: 40px 0;
+}
+
+.main-form .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.form-voluntariado {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+fieldset {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-grid .form-group:first-child,
+.form-grid .form-group:nth-child(2) {
+    grid-column: 1 / -1;
+}
+
+.form-group {    
+    margin: 0 20px 20px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.checkbox-group {
+    margin-bottom: 12px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+}
+
+.field-title {
+    margin: 25px 0 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*  BOTÕES  */
+
+.btn-submit {
+    margin-top: 25px;
+    padding: 14px 35px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-home:hover {
+    background-color: #0056b3;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fab83e;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .container {
+        gap: 30px;
+        padding: 15px;
+    }
+    
+    .logo {
+        height: 150px;
+    }
+    
+    .banner {
+        height: 300px;
+    }
+    
+    .numbers {
+        font-size: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container-nav {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        height: 120px;
+        padding: 10px;
+    }
+    
+    .nav {
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+    .banner {
+        height: 250px;
+    }
+    
+    .container {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .cartao {
+        max-width: 100%;
+    }
+    
+    .foto-maior {
+        height: 300px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin: 30px 0 20px 0;
+    }
+    
+    .numbers {
+        font-size: 35px;
+    }
+    
+    /* Formulário em 1 coluna */
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-grid .form-group:first-child,
+    .form-grid .form-group:nth-child(2) {
+        grid-column: 1;
+    }
+    
+    .main-form .container {
+        padding: 0 20px;
+    }
+    
+    fieldset {
+        padding: 15px;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .logo {
+        height: 100px;
+    }
+    
+    .banner {
+        height: 200px;
+    }
+    
+    .numbers {
+        font-size: 30px;
+    }
+    
+    .btn-submit,
+    .btn-home {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+
+/*   TEXTAREA E SUB-FIELDSETS   */
+
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    resize: vertical; /* permite redimensionar só verticalmente */
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.sub-fieldset {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sub-fieldset legend {
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+/* Remove <strong> dos botões - já tem font-weight no CSS */
+.btn-submit,
+.btn-home {
+    font-weight: 500;
+}
+
+/* Responsividade para textarea */
+@media (max-width: 768px) {
+    textarea {
+        font-size: 16px; /* evita zoom no iOS */
+    }
+}
+
+
+/*   PÁGINA DE PROJETOS   */
+
+.secao-projetos,
+.secao-ajuda {
+    margin: 40px 0;
+}
+
+.projeto-item,
+.ajuda-item {
+    margin: 25px 0;
+}
+
+.projeto-item h3,
+.ajuda-item h3 {
+    color: #007bff;
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.projeto-item p,
+.ajuda-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.chamada-final {
+    margin-top: 30px;
+    font-weight: 500;
+    color: #333;
+    font-size: 17px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projeto-item h3,
+    .ajuda-item h3 {
+        font-size: 16px;
+    }
+    
+    .chamada-final {
+        font-size: 16px;
+    }
+}
+
+
+/*   PÁGINA QUEM SOMOS   */
+
+
+.secao-quem-somos {
+    margin: 40px 0;
+}
+
+.texto-foto h2 {
+    color: #007bff;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    font-weight: 600;
+}
+
+.texto-foto h2:first-of-type {
+    margin-top: 0;
+}
+
+.texto-foto ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.texto-foto ul li {
+    padding: 8px 0;
+    line-height: 1.6;
+}
+
+.texto-foto ul li strong {
+    color: #007bff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .texto-foto h2 {
+        font-size: 18px;
+    }
+}
