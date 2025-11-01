@@ -18,7 +18,9 @@ Clone e abra o `index.html` da atividade desejada.
 
 ## Autor
 
-Carlos Alberto Manara - Curso EAD de Análise e Desenvolvimento de Sistemas
+Carlos Alberto Manara
+Curso de Análise e Desenvolvimento de Sistemas
+Faculdade Cruzeiro do Sul
 
 ---
 
