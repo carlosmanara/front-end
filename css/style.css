@@ -538,3 +538,92 @@ textarea:focus {
         font-size: 18px;
     }
 }
+
+
+
+/* MODO ESCURO E VARIÁVEIS */
+
+:root {
+    /* Cores Padrão (Modo Claro) */
+    --bg-primary: #f0f2f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --header-bg: #fcf95e;
+    --footer-bg: #fab83e;
+    --card-bg: #ffffff;
+    --card-hover: #f3f3ec;
+    --border-color: #ddd;
+    --link-color: #007bff;
+    --link-hover: #0056b3;
+}
+
+/* Modo Escuro */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #1a1a1a;
+        --bg-secondary: #2c2c2c;
+        --text-primary: #e0e0e0;
+        --text-secondary: #b0b0b0;
+        --header-bg: #2c2c2c;
+        --footer-bg: #1f1f1f;
+        --card-bg: #2c2c2c;
+        --card-hover: #3a3a3a;
+        --border-color: #444;
+        --link-color: #4da3ff;
+        --link-hover: #80bdff;
+    }
+    
+    body {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+    }
+    
+    .header {
+        background-color: var(--header-bg);
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .footer {
+        background-color: var(--footer-bg);
+        border-top: 1px solid var(--border-color);
+    }
+    
+    .cartao {
+        background-color: var(--card-bg);
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+    }
+    
+    .cartao:hover {
+        background-color: var(--card-hover);
+    }
+    
+    .nav a {
+        color: var(--text-primary);
+    }
+    
+    .nav a:hover {
+        color: var(--link-color);
+    }
+    
+    input,
+    textarea {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        border-color: var(--border-color);
+    }
+    
+    input:focus,
+    textarea:focus {
+        background-color: var(--bg-primary);
+    }
+    
+    fieldset {
+        border-color: var(--border-color);
+    }
+    
+    .banner-img {
+        opacity: 0.9;
+    }
+}
