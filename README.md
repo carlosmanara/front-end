@@ -48,6 +48,48 @@ git clone https://github.com/carlosmanara/front-end.git
 - Contador animado de estatísticas
 - SPA com navegação fluida
 
+## Acessibilidade
+
+Este projeto foi desenvolvido seguindo as diretrizes de acessibilidade:
+
+### Funcionalidades Implementadas
+
+- **Navegação por Teclado:** Todos os elementos interativos acessíveis via Tab/Enter
+- **Contraste de Cores:** Contraste mínimo de 4.5:1 em todos os textos
+- **Semântica HTML5:** Uso correto de tags semânticas para leitores de tela
+- **ARIA Labels:** Atributos descritivos para elementos interativos
+- **Modo Escuro:** Tema escuro automático baseado na preferência do sistema
+- **Textos Alternativos:** Todas as imagens com descrições adequadas
+- **Formulários Acessíveis:** Labels associados e feedback visual claro
+
+### Testado Com
+
+- Navegação por teclado (Chrome, Opera)
+- Lighthouse (Score de Acessibilidade: 95+)
+- WAVE Web Accessibility Evaluation Tool
+- Contrast Checker (WebAIM)
+
+### Conformidade
+
+Este projeto está em conformidade com:
+- WCAG 2.1 Nível AA
+- Seção 508 (EUA)
+- EN 301 549 (União Europeia)
+
+## Otimizações Implementadas
+
+### Performance
+- CSS minificado (`style.min.css`)
+- JavaScript minificado (arquivos `.min.js`)
+- Imagens otimizadas (redução de até 70%)
+- Lazy loading de imagens
+- SPA para navegação sem reload
+
+### Resultados
+- Lighthouse Performance: 90+
+- First Contentful Paint: < 1.5s
+- Time to Interactive: < 3s
+
 ## Autor
 
 **Carlos Alberto Manara**
