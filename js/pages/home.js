@@ -1,25 +1,29 @@
 function homePage() {
     return `
-        <section class="banner" aria-label="Banner principal">
-            <img src="imagens/foto-banner.jpg" alt="Cães e gatos resgatados pela ONG Amigo Fiel" class="banner-img">
+        <section class="banner" role="region" aria-label="Banner principal">
+            <img src="imagens/foto-banner.jpg" 
+                 alt="Cães e gatos felizes resgatados pela ONG Amigo Fiel aguardando adoção" 
+                 class="banner-img">
         </section>
 
-        <section class="conquistas">
-            <h1 class="title">Tudo começou em 2010 e nossos trabalhos não param!</h1>
+        <section class="conquistas" role="region" aria-labelledby="titulo-conquistas">
+            <h1 id="titulo-conquistas" class="title">
+                Tudo começou em 2010 e nossos trabalhos não param!
+            </h1>
             
-            <div class="container">
-                <div class="cartao">
-                    <p class="numbers" data-target="3000">0</p>
+            <div class="container" role="list">
+                <div class="cartao" role="listitem">
+                    <p class="numbers" data-target="3000" aria-label="Mais de 3000">0</p>
                     <p>ANIMAIS RESGATADOS</p>
                 </div>
                 
-                <div class="cartao">
-                    <p class="numbers" data-target="500">0</p>
+                <div class="cartao" role="listitem">
+                    <p class="numbers" data-target="500" aria-label="Mais de 500">0</p>
                     <p>ENCONTRARAM UM LAR</p>
                 </div>
                 
-                <div class="cartao">
-                    <p class="numbers" data-target="2000">0</p>
+                <div class="cartao" role="listitem">
+                    <p class="numbers" data-target="2000" aria-label="Mais de 2000">0</p>
                     <p>CASTRAÇÕES REALIZADAS</p>
                 </div>
             </div>

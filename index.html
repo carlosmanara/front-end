@@ -11,16 +11,16 @@
 
     <a href="#app" class="skip-link">Pular para conteúdo principal</a>
 
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container-nav">
             <div class="logo-container">
-                <a href="#/" data-link>
-                    <img src="imagens/amigo-fiel-logo.svg" alt="Amigo Fiel - logo" class="logo">
+                <a href="#/" data-link aria-label="Amigo Fiel - Voltar para página inicial">
+                    <img src="imagens/amigo-fiel-logo.svg" alt="Amigo Fiel - logo com cachorro e gato" class="logo">
                 </a>
             </div>
             
-            <nav class="nav">
-                <a href="#/" data-link>Home</a>
+            <nav class="nav" role="navigation" aria-label="Navegação principal">
+                <a href="#/" data-link aria-current="page">Home</a>
                 <a href="#/cadastro" data-link>Cadastro</a>
                 <a href="#/projetos" data-link>Projetos</a>
                 <a href="#/quemsomos" data-link>Quem Somos</a>
@@ -28,11 +28,11 @@
         </div>
     </header>
 
-    <main id="app">
-        <div class="loading">Carregando...</div>
+    <main id="app" role="main" aria-live="polite">
+        <div class="loading" role="status" aria-label="Carregando conteúdo">Carregando...</div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <p><em>Cada gesto de amor conta!</em></p>
         <p><em>Sua ajuda é muito importante para nossos amigos de quatro patas.</em></p>
     </footer>
